@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  
+  public movimentacaoFinancieiraList = [
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "RECEITA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+    { favorecido: "Panificadora Rei do Pão", tipoLancamento: "DESPESA", descricao: "Compra de Pão", dataVencimento: "30/01/2021", dataPagamento: null, valor: 120.00},
+  ];
+
 }

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import {TabViewModule} from 'primeng/primeng';
+import { InputTextModule } from 'primeng/components/inputtext/inputtext';
+import { ButtonModule } from 'primeng/components/button/button';
+import { DataTableModule } from 'primeng/components/datatable/datatable';
+import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 @NgModule({
@@ -8,7 +11,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    TabViewModule
+    InputTextModule,
+    ButtonModule,
+    DataTableModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

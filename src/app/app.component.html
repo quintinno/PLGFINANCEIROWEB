@@ -1,1 +1,49 @@
-<h2 style="text-align:center;">Plataforma de Lançamento - Gerenciador Financeiro</h2>
+<div class="container">
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <h1>Lançamentos</h1>
+        </div>
+        <div class="ui-g-12 ui-fluid">
+            <label class="descricao">Descrição</label>
+            <input id="input" type="text" size="30" pInputText>
+        </div>
+        <div class="ui-g-12">
+            <label style="display: block;">Vencimento</label>
+            <input id="input" type="text" size="30" pInputText>
+
+            <label for="">Até</label>
+            <input id="input" type="text" size="30" pInputText>
+        </div>
+        <div class="ui-g-12">
+            <button pButton type="submit" label="Pesquisar"></button>
+        </div>
+    </div>
+
+    <div class="ui-g-12">
+        <div class="ui-g-12">
+            <p-dataTable [value]="movimentacaoFinancieiraList" [paginator]="true" [rows]="5" [responsive]="true">
+                <p-column header="Estabelecimento" field="favorecido"></p-column>
+                <p-column header="Descrição" field="descricao"></p-column>
+                <p-column header="Vencimento" field="dataVencimento" styleClass="col-data"></p-column>
+                <p-column header="Pagamento" field="dataPagamento" styleClass="col-data"></p-column>
+                <p-column header="Valor" field="valor" styleClass="col-valor">
+                    <ng-template pTemplate="body" let-lancamento_="rowData">
+                        <span [ngStyle]="{ color: lancamento_.tipoLancamento == 'DESPESA' ? 'red' : 'blue' }">{{lancamento_.valor}}</span>
+                    </ng-template>
+                </p-column>
+                <p-column header="Ações" styleClass="col-data">
+                    <ng-template pTemplate="body">
+                        <a pButton pTooltip="Editar Registro" tooltipPosition="top" icon="fa fa-edit" class="ui-button-warning"></a>
+                        <button pButton pTooltip="Remover Registro" tooltipPosition="bottom" icon="fa fa-trash" class="ui-button-danger"></button>
+                    </ng-template>
+                </p-column>
+            </p-dataTable>
+        </div>
+    </div>
+
+    <div class="ui-g-12">
+        <a pButton label="Novo Lançamento"></a>
+    </div>
+
+</div>
